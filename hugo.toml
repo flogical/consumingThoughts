@@ -6,7 +6,9 @@ enableRobotsTXT = true # IMPORTANT: set to true if you want to use the theme's g
 
 [module]
   [[module.imports]]
-    path = "github.com/michenriksen/hugo-theme-til"
+    ignoreConfig = true   #no change when enabled...as below too
+    ignoreImports = true
+    path = "/Users/florentcyamweshi/Downloads/hugo-theme-til-main"
 
 [outputs]
   home = ['html']
