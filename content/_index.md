@@ -1,9 +1,8 @@
 ---
-title: Today I Learned
-date: 2024-10-27
+title: Consuming Thoughts
+date: 2024-12-10
 ---
 
-A Hugo theme focused on simplicity and readability. Ideal for both traditional blog posts and shorter notes that makes
-it easy to record and share knowledge that doesn’t need a full blog post. Perfect for quick tips, insights, and
-discoveries.
+{{< intro "Hello, Hello! I am " "Florent">}}
+Using a Hugo based theme; Consuming Thoughts is a blog/repo for notes and other philosophical musings I have--kinda like shower thoughts really :D
 {.lead}
