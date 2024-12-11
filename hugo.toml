@@ -8,7 +8,7 @@ enableRobotsTXT = true # IMPORTANT: set to true if you want to use the theme's g
   [[module.imports]]
     ignoreConfig = true   #no change when enabled...as below too
     ignoreImports = true
-    path = "github.com/flogical/hugo-theme"
+    path = "github.com/flogical/hugo-theme@latest"
 
 [outputs]
   home = ['html']
