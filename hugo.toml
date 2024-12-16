@@ -6,9 +6,9 @@ enableRobotsTXT = true # IMPORTANT: set to true if you want to use the theme's g
 
 [module]
   [[module.imports]]
-    ignoreConfig = true   #no change when enabled...as below too
-    ignoreImports = true
-    path = "github.com/flogical/hugo-theme"
+    ignoreConfig = false   #no change when enabled...as below too
+    ignoreImports = false
+    path = "/Users/florentcyamweshi/hugo-theme-til-main"  # "github.com/flogical/hugo-theme"
 
 [outputs]
   home = ['html']
@@ -16,6 +16,10 @@ enableRobotsTXT = true # IMPORTANT: set to true if you want to use the theme's g
   page = ['html']
 
 [menus]
+  [[menus.main]]
+    name = 'About'
+    pageRef = '/about'  # stay on page with '#'
+    weight = 10
   [[menus.main]]
     name = 'Notes'
     pageRef = '/notes'
@@ -48,10 +52,26 @@ enableRobotsTXT = true # IMPORTANT: set to true if you want to use the theme's g
   # Default: true
   showGraph = true
 
+  description = 'Heeeeey'  #ok works
+
+  brand_image = '/images/FloC2.png'  #huh worked!!
+
   # Author details for the JSON-LD structured data.
   [params.author]
     name = 'Florent Muyango'
     email = 'muyango3@gmail.com'
+
+  # Menu for About page--test
+  [params.menu.about]
+    name = 'About Me'
+    url = '/about/'
+    pre = '<i class="fa-solid fa-code"></i>'
+    weight = 10
+  [params.menu.Recent]
+    name = 'Recent'
+    pre = '<i class="fa-solid fa-code"></i>'
+    url = '/recent/' # /about/recent ##nope
+    weight = 20
 
   # Homepage setup
   [params.home]
