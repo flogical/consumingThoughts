@@ -1,0 +1,9 @@
+{{/* Custom script for light/dark mode and sticky navigation 
+todo:: add (resources.Get "js/template.js") for sticky nav bar
+*/}}
+{{ $js := slice
+    (resources.Get "js/light_dark.js")}}
+
+{{ $js_bundle := $js | resources.Concat "js/bundle.js" | minify | fingerprint }}
+
+<script defer language="javascript" type="text/javascript" src="{{ $js_bundle.RelPermalink }}"></script>

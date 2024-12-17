@@ -3,12 +3,13 @@ languageCode = 'en-us'
 title = "Flogical Thoughts"
 copyright = 'Florent Muyango' # Used in the footer copyright mention.
 enableRobotsTXT = true # IMPORTANT: set to true if you want to use the theme's genAI/LLM web crawler blocking feature.
+theme = "poison"
 
 [module]
   [[module.imports]]
     ignoreConfig = false   #no change when enabled...as below too
     ignoreImports = false
-    path = "/Users/florentcyamweshi/hugo-theme-til-main"  # "github.com/flogical/hugo-theme"
+    path = "github.com/flogical/hugo-theme"
 
 [outputs]
   home = ['html']
@@ -52,26 +53,42 @@ enableRobotsTXT = true # IMPORTANT: set to true if you want to use the theme's g
   # Default: true
   showGraph = true
 
-  description = 'Heeeeey'  #ok works
+  description = 'Heeeeey' 
 
-  brand_image = '/images/FloC2.png'  #huh worked!!
+  brand_image = '/images/FloC2.png'  #niiice!!
+
+  email_url = "mailto://muyango3@gmail.com"
+  ##facebook_url = "https://facebook.com"
+  github_url = "https://github.com/fmcyamwe"
+  instagram_url = "https://www.instagram.com/iamflogic/"
+  linkedin_url = "https://www.linkedin.com/in/florent-muyango/"
+  tryhackme_url = "https://tryhackme.com"
+  # signal_url = "https://signal.org"
+  # bluesky_url = "https://bsky.app"
 
   # Author details for the JSON-LD structured data.
   [params.author]
     name = 'Florent Muyango'
     email = 'muyango3@gmail.com'
 
-  # Menu for About page--test
-  [params.menu.about]
-    name = 'About Me'
-    url = '/about/'
-    pre = '<i class="fa-solid fa-code"></i>'
-    weight = 10
-  [params.menu.Recent]
-    name = 'Recent'
-    pre = '<i class="fa-solid fa-code"></i>'
-    url = '/recent/' # /about/recent ##nope
-    weight = 20
+  # About page setup--rework to not use menu...
+  [params.about]
+    recentProjectsLimit = 3
+    recents = ['Blu', 'GPlanner', 'Iam'] ##list of projects but filter content for recent pages instead
+  
+  # also About page setup for sidebar menus ##naming..sheesh
+  [params.recent]
+    [[params.recent.about]]
+      name = 'About Me'
+      url = '/about'   # pageRef
+      pre = '<i class="fa-solid fa-code"></i>'
+      weight = 10
+    [[params.recent.about]]
+      name = 'Recent Projects'
+      pre = '<i class="fa-solid fa-code"></i>'
+      url = '/recent'  # pageRef
+      weight = 20
+
 
   # Homepage setup
   [params.home]

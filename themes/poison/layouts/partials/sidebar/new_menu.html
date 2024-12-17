@@ -1,0 +1,43 @@
+<nav>
+    <ul class="sidebar-nav">
+        
+        
+        {{ $recentsLimit := .Site.Params.about.recentProjectsLimit }}
+
+        {{ $recentsList := .Site.Params.about.recents }}
+
+        {{ $rTest := .Site.Params.recent }}
+        
+
+        {{ $page := . }}
+    
+        {{- $allRecents := where .Site.RegularPages "Section" "recent" -}}
+
+        {{- $menus := index $rTest "about" -}}
+        <!--<pre>{{ printf "%+v" $page }}</pre> 
+            and show icons with .pre | safeHTML
+            or use partial "svg/codey.html"
+        --> 
+            {{ range $menus }}
+                <li class="heading"><!-- old class was "bullet" -->
+                    <a href="{{ .url }}">{{ .name }}</a>
+                </li>
+            {{end}}
+       
+        <!--<pre>{{ printf "%+v" $recentsList }}</pre>
+        <pre>{{ debug.Dump $allRecents }}</pre> 
+        no about page with >> where .Site.RegularPages "Section" "about"
+        -->
+        
+        <!-- should be at end and show if any recent projects
+            no need to pass in $recent_item ? seems not
+         -->
+        {{ range $allRecents }}
+         {{ $recent_item := . }}
+         <li class="sub-heading">
+            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+         </li>
+            
+        {{ end }}
+    </ul>
+</nav>

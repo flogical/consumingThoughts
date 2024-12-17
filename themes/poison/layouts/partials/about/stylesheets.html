@@ -1,0 +1,11 @@
+{{ $css_bundle := slice
+    (resources.Get "css/about/poole.css")
+    (resources.Get "css/about/codeblock.css")
+    (resources.Get "css/about/hyde.css")
+    (resources.Get "css/about/poison.css")
+    (resources.Get "css/about/fonts.css")
+    (resources.Get "css/about/tabs.css")
+    (resources.Get "css/about/custom.css")
+  | resources.Concat "css/bundle.css" | minify | fingerprint }}
+
+<link type="text/css" rel="stylesheet" href="{{ $css_bundle.RelPermalink }}">
