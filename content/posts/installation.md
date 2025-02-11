@@ -1,6 +1,7 @@
 ---
 title: Installation and setup
 date: 2024-10-26
+author: Michael
 ---
 
 This post shows how to install and set up the Today I Learned theme on your own Hugo website.

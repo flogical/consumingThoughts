@@ -1,5 +1,6 @@
 baseURL = 'https://consumingthoughts.ca/'
 languageCode = 'en-us'
+defaultContentLanguage = "en"
 title = "Flogical Thoughts"
 copyright = 'Florent Muyango' # Used in the footer copyright mention.
 enableRobotsTXT = true # IMPORTANT: set to true if you want to use the theme's genAI/LLM web crawler blocking feature.
@@ -9,7 +10,7 @@ theme = "poison"
   [[module.imports]]
     ignoreConfig = false   #no change when enabled...as below too
     ignoreImports = false
-    path = "github.com/flogical/hugo-theme"
+    path = "github.com/flogical/hugo-theme"  ## "/Users/florentcyamweshi/hugo-theme-til-main"
 
 [outputs]
   home = ['html']
@@ -56,6 +57,9 @@ theme = "poison"
   description = 'Heeeeey' 
 
   brand_image = '/images/FloC2.png'  #niiice!!
+
+  readingTime = true
+  wordCount = true
 
   email_url = "mailto://muyango3@gmail.com"
   ##facebook_url = "https://facebook.com"

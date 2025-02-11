@@ -1,6 +1,16 @@
 ---
 title: About the theme
 date: 2024-10-27
+author: Michael
+tags : [
+    "hugo",
+    "about",
+    "theme",
+]
+categories : [
+    "themes",
+    "til",
+]
 ---
 
 **Today I Learned** is a [Hugo] theme designed for simplicity, readability, and easy content discovery. It supports both

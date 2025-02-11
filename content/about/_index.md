@@ -3,9 +3,8 @@ title = 'About Me'
 layout = 'about'
 +++
 
-I am an software developer by formation, curious and energetic - that applies technology to solve real-world problems. Personally, I’m easy going, sociable, fast-learner, curious and a natural leader. I love self-teaching myself to pick up a new skill or learn new insights.
+I am a software developer by formation, curious and energetic - that applies technology to solve real-world problems. Personally, I’m easygoing, sociable, a fast-learner, and natural leader. I love self-teaching to acquire new skills and insights.
 
-A deliberate jack of all trades, master of none; I am a fast learner, curious to see how technology can improve user's experience in multiple areas/domains. I have a strong motivation and sense of responsibility with myself, my team and clients (or peers). I daresay people like my positive, easy going and can-do attitude (most people anyway :).
+A deliberate jack of all trades, master of none; I am motivated and curious about how technology can enhance user experiences across various domains. I have a strong sense of responsibility toward my team, clients and peers. I daresay people often appreciate my positive, can-do attitude (most people anyway :).
 
-On the technical side, I’m a specialized generalist; listening and working between different areas with an aim to build and scale reliable systems powering successful tech products: mobile (Android) and web development, devops/SRE, Data...
-This has involved a variety of languages and frameworks, both in the backend and the client side.
+On the technical side, I’m a specialized generalist, bridging different areas to build and scale reliable systems powering successful tech products, including mobile (Android), web development, DevOps/SRE and data solutions. My work/experience spans a variety of languages and frameworks across both backend and client-side development.
