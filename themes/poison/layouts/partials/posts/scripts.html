@@ -1,3 +1,25 @@
 
-<script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C" crossorigin="anonymous"></script>
+<!--<script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C" crossorigin="anonymous">
 
+</script> doesnt work...trying below..also dont work..lookup order?!? or using static? nope either -->
+
+
+<!-- borks now smh
+{{ $css_bundle := slice
+    (resources.Get "fontawesome/css/all.min.css") }}
+-->
+<!--
+<link type="text/css" rel="stylesheet" href="/fontawesome/css/all.min.css">
+
+{{ range .Site.Params.custom_css }}
+<link rel="stylesheet" href="{{ . | absURL }}">
+{{- end }}
+-->
+<!-- bon even below dont get invoked it seems other than when pointing to local base theme smh
+    added script at end of posts/single file...toReview**
+
+{{ range .Site.Params.fontawesome_js }}
+    <script type="text/javascript" src="{{ . | absURL }}"></script>
+{{ end }}
+ 
+-->

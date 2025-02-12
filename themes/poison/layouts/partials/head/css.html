@@ -3,7 +3,18 @@
     <link rel="stylesheet" href="{{ .RelPermalink }}">
   {{- else }}
     {{- with . | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" />
     {{- end }}
   {{- end }}
 {{- end }}
+
+<!--<link href="static/fontawesome/css/all.min.css" rel="stylesheet"> 
+  dont work nor import of css static files smh or gotta remove static/ prefix? :: nope neither but have to remove static prefix still
+  >>it was a lookup issue as this file aint invoked
+
+<link href="/fontawesome/css/all.min.css" type="text/css" rel="stylesheet"/>
+
+{{ range .Site.Params.custom_css }}
+<link rel="stylesheet" href="{{ . }}" />
+{{ end }}
+-->

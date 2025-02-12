@@ -36,4 +36,8 @@
   {{- if or (eq .Section "posts") (eq .Section "notes") }}
     {{ partial "page/meta" . }}
   {{- end }}
+  <script defer src="/js/all.min.js"></script>
+  <!--<script defer src="https://use.fontawesome.com/releases/v5.0.11/js/all.js" integrity="sha384-ImVoB8Er8knetgQakxuBS4G3RSkyD8IZVVQCAnmRJrDwqJFYUE4YOv+DbIofcO9C" crossorigin="anonymous"></script>
+  both ways work at least smh
+  -->
 {{ end }}

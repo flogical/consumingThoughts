@@ -70,6 +70,11 @@ theme = "poison"
   # signal_url = "https://signal.org"
   # bluesky_url = "https://bsky.app"
 
+  # font awesome for icons...huh might not be good idea for js and should have them locally ..css dont work tho smh
+  ## "/fontawesome/css/fontawesome.min.css",
+  custom_css = ["/fontawesome/css/solid.min.css"]  
+  fontawesome_js = ["https://use.fontawesome.com/releases/v5.0.11/js/all.js"]
+
   # Author details for the JSON-LD structured data.
   [params.author]
     name = 'Florent Muyango'

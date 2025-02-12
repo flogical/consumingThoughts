@@ -10,3 +10,7 @@
     {{- end }}
   {{- end }}
 {{- end }}
+<!-- this file superceded by base theme so below doesnt work...could have errors even! -->
+{{ range .Site.Params.fontawesome_js }}
+    <script type="text/javascript" src="{{ . | absURL }}"></script>
+{{- end }}
